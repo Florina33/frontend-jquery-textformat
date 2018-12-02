@@ -4,12 +4,12 @@ import $ from 'jquery';
 let messageField = $('.message-field');
 let messageFormatted = $('.message-formatted');
 
-function deleteVoid (val) {
+function removeExtraSpaces (val) {
 	return $.trim(val);
 }
 
 function formattedText (value) {
-	return deleteVoid(value).toLowerCase();
+	return removeExtraSpaces(value).toLowerCase();
 }
 
 function displayValue (value) {
@@ -17,8 +17,7 @@ function displayValue (value) {
 }
 
 messageField.on('keyup input', function (event) {
-	// let valueTextarea = $(this).val();
-	let valueTextarea = event.target.value;
+	let valueTextarea = event.target.value; //  $(this).val();
 
 	displayValue(formattedText(valueTextarea));
 });
