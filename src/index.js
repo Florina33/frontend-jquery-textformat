@@ -1,4 +1,4 @@
-// import './styles/style.css';
+import './styles/style.css';
 import $ from 'jquery';
 
 let messageField = $('.message-field');
@@ -13,7 +13,7 @@ function formattedText (value) {
 }
 
 function displayValue (value) {
-	$(messageFormatted).text(value);
+	messageFormatted.text(value);
 }
 
 messageField.on('keyup input', function (event) {
