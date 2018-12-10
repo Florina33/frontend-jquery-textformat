@@ -1,5 +1,5 @@
-// import './styles/style.css';
-// import $ from 'jquery';
+import './styles/style.css';
+import $ from 'jquery';
 
 let messageField = $('.message-field');
 let messageFormatted = $('.message-formatted');
