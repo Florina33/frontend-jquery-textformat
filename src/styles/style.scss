@@ -1,0 +1,248 @@
+
+/* ==========================================================================
+
+main
+========================================================================== */
+
+body {
+	// max-width: 1920px;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: 400;
+	font-family: 'Lato', Arial, sans-serif;
+	color: #fff;
+  	cursor: default;
+  
+  .page-wrapper {
+    min-width: 320px;
+    // max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto;
+  }
+}
+
+/* ==========================================================================
+
+typography
+========================================================================== */
+
+h1,
+h2,
+h3 {
+	line-height: inherit;
+	text-align: center;
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: 900;
+	font-family: inherit;
+	color: inherit;
+	margin-bottom: 35px;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 700;
+	font-family: inherit;
+	margin-bottom: 33px;
+}
+
+p {
+	font-size: 18px;
+	font-weight: inherit;
+	line-height: inherit;
+	font-family: inherit;
+	margin-bottom: 22px;
+}
+
+/* 1440 */
+@media (min-width: 1000px) {}
+
+/* 768 */
+@media (min-width: 600px) {
+}
+
+/* 320 */
+@media (min-width: 480px) {
+}
+
+/* Buttons
+----------------------------------------------------------------------------- */
+
+.btn-orange,
+.btn-blue {
+	display: inline-block;
+	border-bottom: 10px solid ;
+	box-sizing: content-box;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	padding: 20px 64px;
+	font-size: 20px;
+	font-weight: inherit;
+	font-family: inherit;
+	text-decoration: none;
+	-webkit-ttransition: all ease-out 0.2s;
+	transition: all ease-out 0.2s;
+}
+
+
+/* Header
+----------------------------------------------------------------------------- */
+.header {
+	width: auto;
+	max-width: 1200px;
+	padding: 42px 1% 0 1%;
+	margin: 0 auto;
+	background: url(../gallary/bg_header.jpg) no-repeat;
+	background-position: center top;
+	text-align: left;
+	z-index: 1;
+
+	.main-menu {
+		width: 100%;
+		padding: 5px 0;
+		text-align: center;
+		
+		font-size: 16px;
+		white-space: nowrap;
+
+		.menu-list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			.menu-item {
+				display: inline-block;
+				height: 19px;
+				line-height: 19px;
+			}
+
+			a {
+				display: block;
+				height: 100%;
+				padding: 0 20px;
+				color: #454546;
+				text-transform: uppercase;
+				text-decoration: none;
+				// line-height: 44px;
+				font-weight: inherit;
+
+				&:last-child {
+					padding: 0 0 0 20px;	
+				}
+				
+				&:hover {
+					color: #fff;
+					text-shadow: 1px 0 1px rgba(0,0,0,0.35);
+				}
+				&:hover::after {
+					content: '';
+					display: inline-block;
+					position: absolute;
+					width: 110%;
+					height: 5px;
+					background: 00b5d2;
+					left: -5%;
+					bottom: 38px;
+					// bottom: 43px;
+				}
+			}
+		}
+		
+	}
+}
+
+/* Middle
+----------------------------------------------------------------------------- */
+
+main.content-wrapper {
+	// padding-bottom: 198px;
+	margin: 0 auto;
+}
+
+.section-wrapper {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* section-partners
+----------------------------------------------------------------------------- */
+
+.section-partners {
+	padding: 5px 0;
+}
+
+/* section-promo
+----------------------------------------------------------------------------- */
+
+.section-promo {
+	background: #00b5d2;
+	text-align: center;
+}
+
+/* section-about-us
+----------------------------------------------------------------------------- */
+
+.section-about-us {
+	text-align: center;
+}
+
+/* section-slider
+----------------------------------------------------------------------------- */
+
+.section-sliders {
+	background: #1c97c5;
+	margin-bottom: 70px;
+
+
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+	
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+		
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		  }
+	  }
+}
+
+
+/* section-target
+----------------------------------------------------------------------------- */
+
+section-target {
+	background: #367ab7;
+	text-align: left;
+	margin-bottom: 60px;
+}
+
+
+/* Footer
+----------------------------------------------------------------------------- */
+.footer {
+	border-top: 3px solid #ccc;
+	text-align: center;
+}

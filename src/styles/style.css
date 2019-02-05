@@ -1,40 +1,209 @@
+/* ==========================================================================
 
+main
+========================================================================== */
 body {
-	background: #eee;
-	font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-	font-size: 14px;
-	line-height: 1.4285em;
-	color: rgba(0,0,0,.87);
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Lato", Arial, sans-serif;
+  color: #fff;
+  cursor: default;
+}
+body .page-wrapper {
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  height: auto;
 }
 
-main {
-	display: block;
-	width: 500px;
-	margin: auto;
+/* ==========================================================================
+
+typography
+========================================================================== */
+h1,
+h2,
+h3 {
+  line-height: inherit;
+  text-align: center;
 }
 
-textarea {
-	display: block;
-	font-family: inherit;
-	font-size: inherit;
-	width: 100%;
-	height: 250px;
-	padding: 10px;
-	overflow: auto;
-	resize: none;
+h2 {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: inherit;
+  color: inherit;
+  margin-bottom: 35px;
 }
 
-button {
-	display: block;
-	margin: 20px auto;
-	width: 100px;
-	height: 25px;
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  margin-bottom: 33px;
 }
 
-output {
-	white-space: pre-wrap;       /* css-3 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;      /* Opera 4-6 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;
+p {
+  font-size: 18px;
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  margin-bottom: 22px;
 }
+
+/* 1440 */
+/* 768 */
+/* 320 */
+/* Buttons
+----------------------------------------------------------------------------- */
+.btn-orange,
+.btn-blue {
+  display: inline-block;
+  border-bottom: 10px solid;
+  box-sizing: content-box;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 64px;
+  font-size: 20px;
+  font-weight: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  -webkit-ttransition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+/* Header
+----------------------------------------------------------------------------- */
+.header {
+  width: auto;
+  max-width: 1200px;
+  padding: 42px 1% 0 1%;
+  margin: 0 auto;
+  background: url(../gallary/bg_header.jpg) no-repeat;
+  background-position: center top;
+  text-align: left;
+  z-index: 1;
+}
+.header .main-menu {
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.header .main-menu .menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header .main-menu .menu-list .menu-item {
+  display: inline-block;
+  height: 19px;
+  line-height: 19px;
+}
+.header .main-menu .menu-list a {
+  display: block;
+  height: 100%;
+  padding: 0 20px;
+  color: #454546;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: inherit;
+}
+.header .main-menu .menu-list a:last-child {
+  padding: 0 0 0 20px;
+}
+.header .main-menu .menu-list a:hover {
+  color: #fff;
+  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.35);
+}
+.header .main-menu .menu-list a:hover::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 110%;
+  height: 5px;
+  background: 0b5d2;
+  left: -5%;
+  bottom: 38px;
+}
+
+/* Middle
+----------------------------------------------------------------------------- */
+main.content-wrapper {
+  margin: 0 auto;
+}
+
+.section-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* section-partners
+----------------------------------------------------------------------------- */
+.section-partners {
+  padding: 5px 0;
+}
+
+/* section-promo
+----------------------------------------------------------------------------- */
+.section-promo {
+  background: #00b5d2;
+  text-align: center;
+}
+
+/* section-about-us
+----------------------------------------------------------------------------- */
+.section-about-us {
+  text-align: center;
+}
+
+/* section-slider
+----------------------------------------------------------------------------- */
+.section-sliders {
+  background: #1c97c5;
+  margin-bottom: 70px;
+}
+.section-sliders .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.section-sliders .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* section-target
+----------------------------------------------------------------------------- */
+section-target {
+  background: #367ab7;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+/* Footer
+----------------------------------------------------------------------------- */
+.footer {
+  border-top: 3px solid #ccc;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

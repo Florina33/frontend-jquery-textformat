@@ -1,23 +1,160 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="minimum-scale=1, width=device-width, maximum-scale=1, user-scalable=no, minimal-ui"/>
-	<title>frontend-jquery-textformat</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+	<title>McGREW Behavior services</title>
 </head>
+
 <body>
-	<main>
-		<form class="message-form" action="./">
-			<textarea class="message-field" name="message" placeholder="Type a text"></textarea>
-			<button class="reset-button" type="reset">Clear</button>
-		</form>
+	<div class="page-wrapper">
 
-		<output class="message-formatted">
-			<!--Formatted text here-->
-		</output>
-	</main>
+		<header class="header">
+			<!-- <div class="section-wrapper"> -->
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="./index.js"></script> 
+			<div class="top-header clearfix">
+				<a href="#" class="logo">
+					<img src="./images/logo.png" alt="McGREW Behavior services logo" width="" height="" />
+				</a>
+
+				<nav class="main-menu">
+					<ul class="menu-list">
+						<li class="menu-item active">
+							<a href="#">Home</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">About us</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="intro">
+				<h2 class="title-with-line">We can help.</h2>
+				<p>Teaching independence to the&nbsp;lives of the&nbsp;people you love with reliable, individualized emotional and
+					behavioral therapy.</p>
+				<a href="#" class="btn-orange">Find help here</a>
+			</div>
+			<!-- </div> -->
+		</header><!-- .header-->
+
+		<main class="content-wrapper">
+
+			<section class="section-partners section-wrapper">
+				<ul class="partners-list">
+					<li class="partner-item">
+						<a href="#">
+							<img src="./gallary/img_partner_magellan.png" srcset="" alt="logo Magellan health" width="" height="" />
+						</a>
+					</li>
+					<li class="partner-item">
+						<a href="#">
+							<img src="./gallary/img_partner_magellan.png" srcset="" alt="logo Magellan health" width="" height="" />
+						</a>
+					</li>
+					<li class="partner-item">
+						<a href="#">
+							<img src="./gallary/img_partner_magellan.png" srcset="" alt="logo Magellan health" width="" height="" />
+						</a>
+					</li>
+					<li class="partner-item">
+						<a href="#">
+							<img src="./gallary/img_partner_magellan.png" srcset="" alt="logo Magellan health" width="" height="" />
+						</a>
+					</li>
+					<li class="partner-item">
+						<a href="#">
+							<img src="./gallary/img_partner_magellan.png" srcset="" alt="logo Magellan health" width="" height="" />
+						</a>
+					</li>
+					<li class="partner-item">
+						<a href="#">
+							<img src="./gallary/img_partner_magellan.png" srcset="" alt="logo Magellan health" width="" height="" />
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="section-promo section-wrapper">
+				<h2>Support For People Of All Walks of Life</h2>
+				<p>Children as young as 2 years old may begin to develop behaviors which need extra support and attention.</p>
+			</section>
+
+			<section class="section-about-us section-wrapper">
+				<h3>McGrew Behavior Services Helps...</h3>
+				<p>Families, organizations and health care providers in Northern California. Our knowledge and experience provide
+					the specialized support people need when overcoming behavioral challenges.</p>
+				<a href="#" class="btn-orange">Contact us</a>
+			</section>
+
+			<section class="section-slider section-wrapper">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">Slide 1</div>
+						<div class="swiper-slide">Slide 2</div>
+						<div class="swiper-slide">Slide 3</div>
+						<div class="swiper-slide">Slide 4</div>
+						<div class="swiper-slide">Slide 5</div>
+						<div class="swiper-slide">Slide 6</div>
+						<div class="swiper-slide">Slide 7</div>
+						<div class="swiper-slide">Slide 8</div>
+						<div class="swiper-slide">Slide 9</div>
+						<div class="swiper-slide">Slide 10</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</section>
+
+			<section class="section-target section-wrapper">
+				<p class="slogan">Be a part of something bigger than yourself. Make a difference.</p>
+				<h2 class="title-with-line">Join Our Team.</h2>
+				<p>We are always looking for highly motivated individuals who aligned with our committment to making a difference
+					in the lives of other people. Whether you’re a BCBA or interested in ABA work we are interested in talking to you!</p>
+				<a href="#" class="btn-blue">Find what’s available</a>
+			</section>
+
+		</main>
+
+	</div>
+
+	<footer class="footer">
+
+		<nav class="footer-menu">
+			<ul class="menu-list">
+				<li class="item-list"><a href="#">Home</a></li>
+				<li class="item-list"><a href="#">About us</a></li>
+				<li class="item-list"><a href="#">Contact</a></li>
+				<li class="item-list"><a href="#">Careers</a></li>
+			</ul>
+		</nav>
+
+		<ul class="contact-info">
+			<li class="item-list address">
+				120 Theresa Ave, American Canyon, CA 94503
+			</li>
+			<li class="item-list link-phone">
+				<a href="tel:707.561.0134 ">707.561.0134</a>
+			</li>
+			<li class="item-list link-mail">
+				<a href="mailto:familyresources@mbisinc.com">familyresources@mbisinc.com</a>
+			</li>
+		</ul>
+
+		<div class="copyright">Copyright Ⓒ 2017 McGrews Behavior Services All Rights Reserved</div>
+
+	</footer>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+	<script src="./index.js"></script>
 </body>
+
 </html>
