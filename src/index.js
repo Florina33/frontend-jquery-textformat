@@ -1,28 +1,29 @@
-import './styles/reset.css';
-import './styles/style.css';
-import './swiper-slider/swiper.min.css';
+// import './styles/reset.css';
+// import './styles/style.css';
+// import './swiper-slider/swiper.min.css';
 
-import $ from 'jquery';
-import './swiper-slider/swiper.min.js';
+// import $ from 'jquery';
+// import './swiper-slider/swiper.min.js';
 
 // ///////////////////////////////
 
-// var swiper = new Swiper('.swiper-container', {
-//     spaceBetween: 30,
-//     centeredSlides: true,
-//     autoplay: {
-//       delay: 2500,
-//       disableOnInteraction: false,
-//     },
-//     pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//   });
+let swiper = new Swiper('.swiper-container', {
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false
+	}
+
+	// pagination: {
+	// 	el: '.swiper-pagination',
+	// 	clickable: true
+	// },
+	// navigation: {
+	// 	nextEl: '.swiper-button-next',
+	// 	prevEl: '.swiper-button-prev'
+	// }
+});
 
 
 // ///////////////////////////////

@@ -168,11 +168,14 @@ main.content-wrapper {
   background: #1c97c5;
   margin-bottom: 70px;
 }
-.section-sliders .swiper-container {
+
+.swiper-container {
   width: 100%;
   height: 100%;
 }
-.section-sliders .swiper-container .swiper-slide {
+
+.swiper-slide {
+  color: red;
   text-align: center;
   font-size: 18px;
   background: #fff;
