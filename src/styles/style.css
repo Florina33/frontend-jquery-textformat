@@ -1,236 +1,40 @@
-/* ==========================================================================
 
-main
-========================================================================== */
 body {
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: normal;
-  font-weight: 400;
-  font-family: "Lato", Arial, sans-serif;
-  color: #fff;
-  cursor: default;
-}
-body .page-wrapper {
-  min-width: 320px;
-  width: 100%;
-  margin: 0 auto;
-  min-height: 100%;
-  height: auto;
+	background: #eee;
+	font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	line-height: 1.4285em;
+	color: rgba(0,0,0,.87);
 }
 
-/* ==========================================================================
-
-typography
-========================================================================== */
-h1,
-h2,
-h3 {
-  line-height: inherit;
-  text-align: center;
+main {
+	display: block;
+	width: 500px;
+	margin: auto;
 }
 
-h2 {
-  font-size: 48px;
-  font-weight: 900;
-  font-family: inherit;
-  color: inherit;
-  margin-bottom: 35px;
+textarea {
+	display: block;
+	font-family: inherit;
+	font-size: inherit;
+	width: 100%;
+	height: 250px;
+	padding: 10px;
+	overflow: auto;
+	resize: none;
 }
 
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-  font-family: inherit;
-  margin-bottom: 33px;
+button {
+	display: block;
+	margin: 20px auto;
+	width: 100px;
+	height: 25px;
 }
 
-p {
-  font-size: 18px;
-  font-weight: inherit;
-  line-height: inherit;
-  font-family: inherit;
-  margin-bottom: 22px;
+output {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;
 }
-
-/* 1440 */
-/* 768 */
-/* 320 */
-/* Buttons
------------------------------------------------------------------------------ */
-.btn-orange,
-.btn-blue {
-  display: inline-block;
-  text-align: center;
-  box-sizing: content-box;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  max-width: 285px;
-  width: 100%;
-  padding: 20px 5px;
-  font-size: 20px;
-  font-weight: inherit;
-  font-family: inherit;
-  text-decoration: none;
-  -webkit-ttransition: all ease-out 0.2s;
-  transition: all ease-out 0.2s;
-}
-
-.btn-orange {
-  background: #e1aa6e;
-  border-bottom: 10px solid #ba8e5b;
-}
-
-.btn-blue {
-  background: #00b5d2;
-  border-bottom: 10px solid #008ea5;
-}
-
-/* Header
------------------------------------------------------------------------------ */
-.header {
-  width: auto;
-  max-width: 1200px;
-  padding: 42px 1% 0 1%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background: url(../gallary/bg_header.jpg) no-repeat;
-  background-position: center top;
-  text-align: left;
-  z-index: 1;
-}
-.header .main-menu {
-  width: 100%;
-  padding: 5px 0;
-  text-align: center;
-  font-size: 16px;
-  white-space: nowrap;
-}
-.header .main-menu .menu-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.header .main-menu .menu-list .menu-item {
-  display: inline-block;
-  height: 19px;
-  line-height: 19px;
-}
-.header .main-menu .menu-list a {
-  display: block;
-  height: 100%;
-  padding: 0 20px;
-  color: #454546;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: inherit;
-}
-.header .main-menu .menu-list a:last-child {
-  padding: 0 0 0 20px;
-}
-.header .main-menu .menu-list a:hover {
-  color: #fff;
-  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.35);
-}
-.header .main-menu .menu-list a:hover::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 110%;
-  height: 5px;
-  background: 0b5d2;
-  left: -5%;
-  bottom: 38px;
-}
-.header .intro .btn-find-help {
-  margin-bottom: 130px;
-}
-
-/* Middle
------------------------------------------------------------------------------ */
-main.content-wrapper {
-  margin: 0 auto;
-}
-
-.section-wrapper {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-/* section-partners
------------------------------------------------------------------------------ */
-.section-partners {
-  padding: 5px 0;
-}
-.section-partners .partner-item {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* section-promo
------------------------------------------------------------------------------ */
-.section-promo {
-  background: #00b5d2;
-  background: url(../images/bg_pepple_age.png) #00b5d2 no-repeat bottom center;
-  text-align: center;
-  padding: 95px 2% 300px 2%;
-}
-
-/* section-about-us
------------------------------------------------------------------------------ */
-.section-about-us {
-  text-align: center;
-}
-
-/* section-slider
------------------------------------------------------------------------------ */
-.section-slider {
-  background: url("../images/bg_section_slider.jpg") no-repeat center center, #1c97c5;
-  margin-bottom: 70px;
-}
-
-.swiper-container {
-  width: 100%;
-  max-width: 766px;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: red;
-  border: 8px solid #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-/* section-target
------------------------------------------------------------------------------ */
-section-target {
-  background: #367ab7;
-  text-align: left;
-  margin-bottom: 60px;
-}
-
-/* Footer
------------------------------------------------------------------------------ */
-.footer {
-  border-top: 3px solid #ccc;
-  text-align: center;
-}
-
-/*# sourceMappingURL=style.css.map */
